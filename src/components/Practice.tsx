@@ -16,14 +16,14 @@ export function Composition() {
       <div className="section-heading">
         <div>
           <p className="eyebrow">LESSON 03</p>
-          <h2 id="composition-heading">文字を組み合わせよう</h2>
+          <h2 id="composition-heading">文字を組み合わせよう <span lang="ko">(글자를 조합해 봐요)</span></h2>
         </div>
         <p className="section-meta">{BASIC_CONSONANTS.length * BASIC_VOWELS.length}通り</p>
       </div>
       <div className="composition">
         <div className="composition-inputs">
           <fieldset>
-            <legend>子音</legend>
+            <legend>子音 <span lang="ko">(자음)</span></legend>
             <div className="jamo-buttons">
               {BASIC_CONSONANTS.map((letter) => (
                 <label className="jamo-option" key={letter}>
@@ -35,7 +35,7 @@ export function Composition() {
             </div>
           </fieldset>
           <fieldset>
-            <legend>母音</legend>
+            <legend>母音 <span lang="ko">(모음)</span></legend>
             <div className="jamo-buttons">
               {BASIC_VOWELS.map((letter) => (
                 <label className="jamo-option" key={letter}>
@@ -52,7 +52,7 @@ export function Composition() {
             {consonant} + {vowel} = <strong>{syllable}</strong>
           </span>
           <span className="composition-kana">
-            {kana ? <>近い日本語の音 <b>{kana}</b></> : 'かな表記の対応例なし'}
+            {kana ? <>近い日本語の音 <span lang="ko">(비슷한 일본어 소리)</span> <b>{kana}</b></> : 'かな表記の対応例なし'}
           </span>
         </output>
       </div>
@@ -110,7 +110,7 @@ export function ReadingQuiz({ entries, best, onComplete }: {
   return (
     <section className="section" id="quiz" aria-labelledby="quiz-heading">
       <div className="section-heading">
-        <h2 id="quiz-heading">ハングル読みクイズ</h2>
+        <h2 id="quiz-heading">ハングル読みクイズ <span lang="ko">(한글 읽기 퀴즈)</span></h2>
         {best > 0 && <p className="section-meta">最高記録 {best}問正解</p>}
       </div>
       <div className="quiz-card">
@@ -169,6 +169,19 @@ export function ReadingQuiz({ entries, best, onComplete }: {
   )
 }
 
+const topicTranslations: Readonly<Record<string, string | undefined>> = {
+  '': '전체',
+  あいさつ: '인사',
+  自己紹介: '자기소개',
+  友だちとの会話: '친구와의 대화',
+  職場: '직장',
+  'カフェ・食事': '카페·식사',
+  買い物: '쇼핑',
+  交通: '교통',
+  旅行: '여행',
+  趣味: '취미',
+}
+
 export function DailyExpressions({ entries }: { entries: readonly Expression[] }) {
   const topics = [...new Set(entries.map(({ topicJa }) => topicJa))]
   const [topic, setTopic] = useState(topics[0] ?? '')
@@ -179,7 +192,7 @@ export function DailyExpressions({ entries }: { entries: readonly Expression[] }
       <div className="section-heading">
         <div>
           <p className="eyebrow">DAILY JAPANESE</p>
-          <h2 id="expressions-heading">ハングルで日本語を読もう</h2>
+          <h2 id="expressions-heading">ハングルで日本語を読もう <span lang="ko">(한글로 일본어를 읽어 봐요)</span></h2>
         </div>
         <p className="section-meta">全{entries.length}表現</p>
       </div>
@@ -189,6 +202,7 @@ export function DailyExpressions({ entries }: { entries: readonly Expression[] }
           <button aria-pressed={option === topic} className="button button-secondary"
             key={option} onClick={() => setTopic(option)} type="button">
             {option || 'すべて'}
+            {topicTranslations[option] && <span lang="ko"> ({topicTranslations[option]})</span>}
           </button>
         ))}
       </div>

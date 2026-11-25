@@ -13,20 +13,20 @@ const expressions: Expression[] = expressionData
 const quizEntries = [...consonants, ...vowels, ...expressions]
 
 const levels = [
-  { title: '基本子音', target: 'consonants' },
-  { title: '基本母音', target: 'vowels' },
-  { title: '文字の組み合わせ', target: 'composition' },
-  { title: '濃音と複合母音' },
-  { title: 'パッチム' },
-  { title: '日本語とハングルの音の違い' },
-  { title: '日本語の日常表現', target: 'expressions' },
+  { title: '基本子音 (기본 자음)', target: 'consonants' },
+  { title: '基本母音 (기본 모음)', target: 'vowels' },
+  { title: '文字の組み合わせ (글자 조합)', target: 'composition' },
+  { title: '濃音と複合母音 (쌍자음과 복합 모음)' },
+  { title: 'パッチム (받침)' },
+  { title: '日本語とハングルの音の違い (일본어와 한글의 소리 차이)' },
+  { title: '日本語の日常表現 (일본어 일상 표현)', target: 'expressions' },
 ]
 
 function CourseOutline() {
   return (
     <section className="section" id="course" aria-labelledby="course-heading">
       <div className="section-heading">
-        <h2 id="course-heading">学習コース</h2>
+        <h2 id="course-heading">学習コース <span lang="ko">(학습 과정)</span></h2>
       </div>
       <ol className="course-list">
         {levels.map(({ title, target }, index) => {
@@ -85,10 +85,10 @@ export default function App() {
         <section className="hero" id="top" aria-labelledby="hero-heading">
           <div className="shell hero-content">
             <div>
-              <p className="hero-label">日本語で学ぶハングル</p>
+              <p className="hero-label">日本語で学ぶハングル <span lang="ko">(일본어로 배우는 한글)</span></p>
               <h1 id="hero-heading">日本語に、<br />新しい文字の<br className="hero-wrap" />選択肢を。</h1>
               <p className="hero-intro">
-                <strong>日本語でハングルを学ぼう！</strong><br />
+                <strong>日本語でハングルを学ぼう！ <span lang="ko">(일본어로 한글을 배워요!)</span></strong><br />
                 新しい言語ではなく、新しい文字を学ぼう。
               </p>
               <a className="button button-primary hero-action" href="#consonants">
@@ -103,9 +103,9 @@ export default function App() {
           </div>
         </section>
         <div className="shell study">
-          <Lesson id="consonants" number="01" title="基本子音" entries={consonants}
+          <Lesson id="consonants" number="01" title="基本子音 (기본 자음)" entries={consonants}
             completed={progress.consonants} onComplete={(id) => completeLesson('consonants', id)} />
-          <Lesson id="vowels" number="02" title="基本母音" entries={vowels}
+          <Lesson id="vowels" number="02" title="基本母音 (기본 모음)" entries={vowels}
             completed={progress.vowels} onComplete={(id) => completeLesson('vowels', id)} />
           <Composition />
           <ReadingQuiz entries={quizEntries} best={progress.quizBest} onComplete={recordQuiz} />

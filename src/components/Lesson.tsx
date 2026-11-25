@@ -31,19 +31,19 @@ export function ExpressionGrid({ forms, highlight, hideKana = false }: {
 }) {
   const columns: { label: string; lang: string; value: ReactNode }[] = [
     {
-      label: 'ハングル表記の日本語',
+      label: 'ハングル表記の日本語 (한글 표기의 일본어)',
       lang: 'ko',
       value: forms.hangulJapanese && (
         <HighlightedWord word={forms.hangulJapanese} highlight={highlight} />
       ),
     },
     {
-      label: 'かな表記',
+      label: 'かな表記 (가나 표기)',
       lang: 'ja',
       value: hideKana && forms.kana ? <span className="muted-answer">非表示</span> : forms.kana,
     },
-    { label: '漢字かな交じり文', lang: 'ja', value: forms.japanese },
-    { label: '韓国語表現', lang: 'ko', value: forms.korean },
+    { label: '漢字かな交じり文 (한자·가나 혼용문)', lang: 'ja', value: forms.japanese },
+    { label: '韓国語表現 (한국어 표현)', lang: 'ko', value: forms.korean },
   ]
 
   return (
