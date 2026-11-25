@@ -41,6 +41,7 @@ button:enabled { cursor: pointer; }
 .hero-wrap { display: none; }
 .hero-intro { margin-block: 1.25rem 1.4rem; color: var(--muted); font-size: clamp(.88rem, 2vw, 1rem); }
 .hero-intro strong { color: var(--ink); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
 .hero-action { gap: .85rem; }
 .hero-letters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: min(100%, 27rem); gap: clamp(.5rem, 1.8vw, 1rem); }
 .hero-letters span {

@@ -191,7 +191,7 @@ export function DailyExpressions({ entries }: { entries: readonly Expression[] }
     <section className="section" id="expressions" aria-labelledby="expressions-heading">
       <div className="section-heading">
         <div>
-          <p className="eyebrow">DAILY JAPANESE</p>
+          <p className="eyebrow">EXPRESSION LIBRARY</p>
           <h2 id="expressions-heading">ハングルで日本語を読もう <span lang="ko">(한글로 일본어를 읽어 봐요)</span></h2>
         </div>
         <p className="section-meta">全{entries.length}表現</p>

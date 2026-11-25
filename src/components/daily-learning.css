@@ -1,0 +1,244 @@
+.daily-learning {
+  --daily-green: #246747;
+  --daily-green-soft: #e8f5ed;
+}
+
+.daily-learning [lang="ko"] { word-break: keep-all; }
+
+.daily-overview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .85rem 1.5rem;
+  padding: clamp(.9rem, 3vw, 1.5rem);
+  color: var(--accent-deep);
+  background: linear-gradient(120deg, #edf3ff, #f5f8fd 75%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.daily-overview-title {
+  font-size: clamp(.96rem, 3vw, 1.12rem);
+  font-weight: 750;
+}
+
+.daily-progress {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .3rem .7rem;
+  margin-top: .35rem;
+  color: var(--muted);
+  font-size: .79rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.daily-progress progress {
+  width: min(100%, 10rem);
+  height: .55rem;
+  overflow: hidden;
+  accent-color: var(--accent);
+}
+
+.daily-layout {
+  display: grid;
+  align-items: start;
+  gap: .9rem;
+  margin-top: .85rem;
+}
+
+.daily-calendar, .daily-lesson {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.daily-calendar {
+  padding: .9rem;
+}
+
+.daily-calendar h3 {
+  margin: 0 0 .7rem;
+  font-size: .9rem;
+}
+
+.daily-calendar ol {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.daily-day {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 44px;
+  padding: .25rem;
+  background: var(--surface);
+  color: var(--accent-deep);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: .88rem;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.daily-day:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.daily-day[data-complete] {
+  background: var(--daily-green-soft);
+  border-color: #a5cdb6;
+  color: var(--daily-green);
+}
+
+.daily-day span {
+  position: absolute;
+  top: .1rem;
+  right: .23rem;
+  font-size: .63rem;
+}
+
+.daily-day[aria-current="step"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.daily-lesson-header {
+  padding: 1.1rem clamp(.9rem, 3vw, 1.4rem);
+}
+
+.daily-lesson-header h3 {
+  margin: .16rem 0 0;
+  font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.daily-phrase {
+  margin-inline: clamp(.65rem, 2vw, 1rem);
+  padding: clamp(1.15rem, 4vw, 2rem) .7rem;
+  border: 1px solid #d9e4f9;
+  border-radius: 12px;
+  background: #f4f7fd;
+  text-align: center;
+}
+
+.daily-phrase-label {
+  color: var(--muted);
+  font-size: .79rem;
+  font-weight: 700;
+}
+
+.daily-phrase-text {
+  margin-block: .45rem 1rem;
+  color: var(--accent-deep);
+  font-size: clamp(1.5rem, 5vw, 2.55rem);
+  font-weight: 800;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.daily-actions, .daily-lesson-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .45rem;
+}
+
+.daily-speech-status {
+  margin-top: .55rem;
+  color: var(--muted);
+  font-size: .79rem;
+}
+
+.daily-speech-status:empty {
+  margin: 0;
+}
+
+.daily-answer {
+  margin: .7rem clamp(.65rem, 2vw, 1rem) 0;
+  color: var(--muted);
+}
+
+.daily-answer dl {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  margin-bottom: .7rem;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.daily-answer dl > div {
+  min-width: 0;
+  padding: .65rem .75rem;
+  background: #fbfcfe;
+  overflow-wrap: anywhere;
+}
+
+.daily-answer dt {
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.daily-answer dd {
+  color: var(--ink);
+  font-size: .92rem;
+  font-weight: 650;
+}
+
+.daily-answer p {
+  padding-inline: .45rem;
+  font-size: .84rem;
+}
+
+.daily-answer p + p {
+  margin-top: .2rem;
+}
+
+.daily-lesson-footer {
+  justify-content: space-between;
+  padding: .85rem clamp(.65rem, 2vw, 1rem);
+}
+
+.daily-lesson-footer .button {
+  flex: 1 1 auto;
+}
+
+.daily-completed {
+  background: var(--daily-green-soft);
+  border-color: #a5cdb6;
+  color: var(--daily-green);
+}
+
+.daily-completed[aria-disabled="true"] {
+  cursor: default;
+}
+
+@media (min-width: 42rem) {
+  .daily-answer dl {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 55rem) {
+  .daily-layout {
+    grid-template-columns: minmax(16rem, .72fr) minmax(0, 1.65fr);
+  }
+
+  .daily-calendar {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

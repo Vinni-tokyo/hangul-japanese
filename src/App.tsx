@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { DailyLearning } from './components/DailyLearning'
 import { Lesson } from './components/Lesson'
 import { Composition, DailyExpressions, ReadingQuiz } from './components/Practice'
 import consonantData from './data/consonants.json'
@@ -91,9 +92,14 @@ export default function App() {
                 <strong>日本語でハングルを学ぼう！ <span lang="ko">(일본어로 한글을 배워요!)</span></strong><br />
                 新しい言語ではなく、新しい文字を学ぼう。
               </p>
-              <a className="button button-primary hero-action" href="#consonants">
-                ハングルを学ぶ <span aria-hidden="true">↓</span>
-              </a>
+              <div className="hero-actions">
+                <a className="button button-primary hero-action" href="#consonants">
+                  ハングルを学ぶ <span aria-hidden="true">↓</span>
+                </a>
+                <a className="button button-secondary" href="#daily-learning">
+                  30日間の学習 <span lang="ko">(30일 학습)</span>
+                </a>
+              </div>
             </div>
             <div className="hero-letters" aria-hidden="true">
               <span>あ</span>
@@ -110,6 +116,7 @@ export default function App() {
           <Composition />
           <ReadingQuiz entries={quizEntries} best={progress.quizBest} onComplete={recordQuiz} />
           <CourseOutline />
+          <DailyLearning />
           <DailyExpressions entries={expressions} />
         </div>
       </main>
