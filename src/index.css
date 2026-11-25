@@ -27,12 +27,9 @@ button:enabled { cursor: pointer; }
 .skip-link { position: absolute; z-index: 2; top: 1rem; left: 1rem; background: var(--surface); padding: .5rem .8rem; transform: translateY(-200%); }
 .skip-link:focus { transform: translateY(0); }
 .site-header { background: var(--surface); border-bottom: 1px solid var(--line); }
-.header-content, .footer-content { display: flex; align-items: center; justify-content: space-between; min-height: 4rem; gap: .75rem; }
-.brand, .repo-link { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; text-decoration: none; }
-.brand { letter-spacing: -.02em; }
+.header-content, .footer-content { display: flex; align-items: center; min-height: 4rem; }
+.brand { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; letter-spacing: -.02em; text-decoration: none; }
 .brand-mark { display: inline-grid; place-items: center; padding: .15rem .5rem; border-radius: 5px; background: var(--accent); color: #fff; }
-.repo-link { color: var(--accent-deep); font-size: .87rem; white-space: nowrap; }
-.repo-link:hover { text-decoration: underline; }
 
 .hero {
   border-bottom: 1px solid var(--line);

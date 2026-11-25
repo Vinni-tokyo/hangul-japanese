@@ -7,7 +7,6 @@ import vowelData from './data/vowels.json'
 import type { Expression, LessonEntry, LessonKey } from './types/learning'
 import { loadProgress, saveProgress } from './utils/progress'
 
-const repository = 'https://github.com/Vinni-tokyo/hangul-japanese'
 const consonants = (consonantData as LessonEntry[]).slice().sort((a, b) => a.order - b.order)
 const vowels = (vowelData as LessonEntry[]).slice().sort((a, b) => a.order - b.order)
 const expressions: Expression[] = expressionData
@@ -80,9 +79,6 @@ export default function App() {
             <span className="brand-mark" lang="ko">한글</span>
             <span>Hangul Japanese</span>
           </a>
-          <a className="repo-link" href={repository}>
-            GitHub <span aria-hidden="true">↗</span>
-          </a>
         </div>
       </header>
       <main id="main" tabIndex={-1}>
@@ -120,7 +116,6 @@ export default function App() {
       <footer className="site-footer">
         <div className="shell footer-content">
           <span>Hangul Japanese · Open Source Project</span>
-          <a className="repo-link" href={repository}>GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </footer>
     </>
