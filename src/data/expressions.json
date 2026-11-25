@@ -1,0 +1,242 @@
+[
+  {
+    "id": "expression-001",
+    "topicJa": "あいさつ",
+    "hangulJapanese": "아리가토고자이마스",
+    "kana": "ありがとうございます",
+    "japanese": "有難うございます",
+    "korean": "감사합니다"
+  },
+  {
+    "id": "expression-002",
+    "topicJa": "あいさつ",
+    "hangulJapanese": "오하요",
+    "kana": "おはよう",
+    "japanese": "おはよう",
+    "korean": "좋은 아침"
+  },
+  {
+    "id": "expression-003",
+    "topicJa": "あいさつ",
+    "hangulJapanese": "콘니치와",
+    "kana": "こんにちは",
+    "japanese": "こんにちは",
+    "korean": "안녕하세요"
+  },
+  {
+    "id": "expression-004",
+    "topicJa": "あいさつ",
+    "hangulJapanese": "오야스미",
+    "kana": "おやすみ",
+    "japanese": "おやすみ",
+    "korean": "잘 자"
+  },
+  {
+    "id": "expression-005",
+    "topicJa": "あいさつ",
+    "hangulJapanese": "콘반와",
+    "kana": "こんばんは",
+    "japanese": "こんばんは",
+    "korean": "안녕하세요"
+  },
+  {
+    "id": "expression-006",
+    "topicJa": "自己紹介",
+    "hangulJapanese": "하지메마시테",
+    "kana": "はじめまして",
+    "japanese": "はじめまして",
+    "korean": "처음 뵙겠습니다"
+  },
+  {
+    "id": "expression-007",
+    "topicJa": "自己紹介",
+    "hangulJapanese": "와타시와 미카데스",
+    "kana": "わたしはミカです",
+    "japanese": "私はミカです",
+    "korean": "저는 미카입니다"
+  },
+  {
+    "id": "expression-008",
+    "topicJa": "自己紹介",
+    "hangulJapanese": "요로시쿠 오네가이시마스",
+    "kana": "よろしくおねがいします",
+    "japanese": "よろしくお願いします",
+    "korean": "잘 부탁드립니다"
+  },
+  {
+    "id": "expression-009",
+    "topicJa": "自己紹介",
+    "hangulJapanese": "토쿄카라 키마시타",
+    "kana": "とうきょうからきました",
+    "japanese": "東京から来ました",
+    "korean": "도쿄에서 왔습니다"
+  },
+  {
+    "id": "expression-010",
+    "topicJa": "友だちとの会話",
+    "hangulJapanese": "다이죠부",
+    "kana": "だいじょうぶ",
+    "japanese": "大丈夫",
+    "korean": "괜찮아"
+  },
+  {
+    "id": "expression-011",
+    "topicJa": "友だちとの会話",
+    "hangulJapanese": "이네",
+    "kana": "いいね",
+    "japanese": "いいね",
+    "korean": "좋네"
+  },
+  {
+    "id": "expression-012",
+    "topicJa": "友だちとの会話",
+    "hangulJapanese": "쟈、마타네",
+    "kana": "じゃあ、またね",
+    "japanese": "じゃあ、またね",
+    "korean": "그럼 또 봐"
+  },
+  {
+    "id": "expression-013",
+    "topicJa": "職場",
+    "hangulJapanese": "오츠카레사마데스",
+    "kana": "おつかれさまです",
+    "japanese": "お疲れ様です",
+    "korean": "수고 많으십니다"
+  },
+  {
+    "id": "expression-014",
+    "topicJa": "職場",
+    "hangulJapanese": "쇼쇼 오마치 쿠다사이",
+    "kana": "しょうしょうおまちください",
+    "japanese": "少々お待ちください",
+    "korean": "잠시만 기다려 주세요"
+  },
+  {
+    "id": "expression-015",
+    "topicJa": "職場",
+    "hangulJapanese": "카쿠닌시마스",
+    "kana": "かくにんします",
+    "japanese": "確認します",
+    "korean": "확인하겠습니다"
+  },
+  {
+    "id": "expression-016",
+    "topicJa": "カフェ・食事",
+    "hangulJapanese": "오차오 쿠다사이",
+    "kana": "おちゃをください",
+    "japanese": "お茶をください",
+    "korean": "차를 주세요"
+  },
+  {
+    "id": "expression-017",
+    "topicJa": "カフェ・食事",
+    "hangulJapanese": "코히오 쿠다사이",
+    "kana": "コーヒーをください",
+    "japanese": "コーヒーをください",
+    "korean": "커피를 주세요"
+  },
+  {
+    "id": "expression-018",
+    "topicJa": "カフェ・食事",
+    "hangulJapanese": "이타다키마스",
+    "kana": "いただきます",
+    "japanese": "いただきます",
+    "korean": "잘 먹겠습니다"
+  },
+  {
+    "id": "expression-019",
+    "topicJa": "カフェ・食事",
+    "hangulJapanese": "고치소사마데시타",
+    "kana": "ごちそうさまでした",
+    "japanese": "ごちそうさまでした",
+    "korean": "잘 먹었습니다"
+  },
+  {
+    "id": "expression-020",
+    "topicJa": "買い物",
+    "hangulJapanese": "이쿠라데스카",
+    "kana": "いくらですか",
+    "japanese": "いくらですか",
+    "korean": "얼마예요?"
+  },
+  {
+    "id": "expression-021",
+    "topicJa": "買い物",
+    "hangulJapanese": "코레오 쿠다사이",
+    "kana": "これをください",
+    "japanese": "これをください",
+    "korean": "이거 주세요"
+  },
+  {
+    "id": "expression-022",
+    "topicJa": "買い物",
+    "hangulJapanese": "카도데 하라에마스카",
+    "kana": "カードではらえますか",
+    "japanese": "カードで払えますか",
+    "korean": "카드로 결제할 수 있나요?"
+  },
+  {
+    "id": "expression-023",
+    "topicJa": "交通",
+    "hangulJapanese": "에키와 도코데스카",
+    "kana": "えきはどこですか",
+    "japanese": "駅はどこですか",
+    "korean": "역은 어디예요?"
+  },
+  {
+    "id": "expression-024",
+    "topicJa": "交通",
+    "hangulJapanese": "츠기노 에키데 오리마스",
+    "kana": "つぎのえきでおります",
+    "japanese": "次の駅で降ります",
+    "korean": "다음 역에서 내립니다"
+  },
+  {
+    "id": "expression-025",
+    "topicJa": "交通",
+    "hangulJapanese": "치켓토오 이치마이 쿠다사이",
+    "kana": "チケットをいちまいください",
+    "japanese": "チケットを一枚ください",
+    "korean": "표 한 장 주세요"
+  },
+  {
+    "id": "expression-026",
+    "topicJa": "旅行",
+    "hangulJapanese": "요야쿠시마시타",
+    "kana": "よやくしました",
+    "japanese": "予約しました",
+    "korean": "예약했습니다"
+  },
+  {
+    "id": "expression-027",
+    "topicJa": "旅行",
+    "hangulJapanese": "샤신오 톳테모 이데스카",
+    "kana": "しゃしんをとってもいいですか",
+    "japanese": "写真を撮ってもいいですか",
+    "korean": "사진을 찍어도 될까요?"
+  },
+  {
+    "id": "expression-028",
+    "topicJa": "旅行",
+    "hangulJapanese": "코코니 이키타이데스",
+    "kana": "ここにいきたいです",
+    "japanese": "ここに行きたいです",
+    "korean": "여기에 가고 싶어요"
+  },
+  {
+    "id": "expression-029",
+    "topicJa": "趣味",
+    "hangulJapanese": "온가쿠가 스키데스",
+    "kana": "おんがくがすきです",
+    "japanese": "音楽が好きです",
+    "korean": "음악을 좋아합니다"
+  },
+  {
+    "id": "expression-030",
+    "topicJa": "趣味",
+    "hangulJapanese": "에가오 미마스",
+    "kana": "えいがをみます",
+    "japanese": "映画を見ます",
+    "korean": "영화를 봐요"
+  }
+]
